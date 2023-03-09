@@ -1,0 +1,16 @@
+Nastase Maria
+311 CA
+
+Task 1:
+	Pentru a calcula suma elementelor de pe conturul hartii, se foloseste functia "vector" care construieste vectorul de bytes ai unui element din matricea hartii. Cat timp linia curenta nu este prima sau ultima, la suma se adauga primul byte al elementului 0 si ultimul byte al ultimului element de pe linia matricei. Pentru prima si ultima linie, se adauga toti bytes-ii. In timp ce se calculeaza suma, se contorizeaza numarul de bytes care participa la suma a putea calcula media aritmetica.
+
+Task 2:
+	In task 2, se citesc comenzile si se apeleaza functia care implementeaza comanda: modif, del, schimb. 
+	Modif verifica daca prin aceasta actiune creste numarul de octeti de pe linia respectiva, situatie in care realoca linia si modifica dimensiunea. Se identifica zona care trebuie modificata si se altereaza numarul de bytes care trebuie modificat tinand cont de tipul de date cu portiunea corespunzatoare din valoarea transmisa.
+	Similar lui modif, del atribuie atribuie primilor "d" (dimensiunea tipului de date: 1 - char/2 - short/4 - int) bytes ai blocului de date gasit valoarea 0.
+	Schimb identifica pozitia de la care incepe interschimbarea si, tinand cont de tipul de date, interschimba numarul corespunzator de bytes.
+
+Task 3:
+	In acest task, se aloca o noua matrice bordata cu 2 linii suplimentare si se adauga coloane suplimentare pana la maximul de coloane din matricea hartii (maxim * 4 + 1) - matrice gauri negre. In aceasta matrice, incepand cu coloana si linia 1, se inregistreaza gaurile negre (bytes-ii egali cu 0), prin marcarea cu valoarea 1. Se foloseste algoritmul fill pentru a gasi zonele de valoare 1, iar fiecare element egal cu 1 este initializat cu numarul zonei in care se afla (cu exceptia zonei 1, care se marcheaza cu -1). Se aloca un vector cu dimensiunea egala cu nr de zone pt stocarea ariei.
+Parcurgand vectorul, se determina aria maxima care se foloseste pentru determinarea primului indice al zonei respective.	
+
